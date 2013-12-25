@@ -1,0 +1,943 @@
+{
+  "base": {
+    "name": "基礎規則",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "金擊術",
+          "combination": "金",
+          "category": "金行攻擊",
+          "effect": "點數＝等級＋４"
+        },
+        {
+          "name": "木擊術",
+          "combination": "木",
+          "category": "木行攻擊",
+          "effect": "點數＝等級＋４"
+        },
+        {
+          "name": "水擊術",
+          "combination": "水",
+          "category": "水行攻擊",
+          "effect": "點數＝等級＋４"
+        },
+        {
+          "name": "火擊術",
+          "combination": "火",
+          "category": "火行攻擊",
+          "effect": "點數＝等級＋４"
+        },
+        {
+          "name": "土擊術",
+          "combination": "土",
+          "category": "土行攻擊",
+          "effect": "點數＝等級＋４"
+        },
+        {
+          "name": "武器",
+          "combination": "金金",
+          "category": "物理攻擊",
+          "effect": "點數＝等級總和×２"
+        },
+        {
+          "name": "防禦",
+          "combination": "木木",
+          "category": "被動術式",
+          "effect": "下家下回合攻擊之傷害無效"
+        },
+        {
+          "name": "封印",
+          "combination": "水水",
+          "category": "被動術式",
+          "effect": "下家下回合術式無效"
+        },
+        {
+          "name": "反震",
+          "combination": "火火",
+          "category": "被動術式",
+          "effect": "下家下回合攻擊之傷害由目標與施展者平分"
+        },
+        {
+          "name": "幻化",
+          "combination": "土土",
+          "category": "主動術式",
+          "effect": "複製上家上回合施展之基礎規則陣法之類別與效果"
+        },
+        {
+          "name": "空城",
+          "combination": "兩張不同屬性牌",
+          "category": "被動術式",
+          "effect": "無效果"
+        },
+        {
+          "name": "鍠金",
+          "combination": "金金金",
+          "category": "金行攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "樸木",
+          "combination": "木木木",
+          "category": "木行攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "洄水",
+          "combination": "水水水",
+          "category": "水行攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "熾火",
+          "combination": "火火火",
+          "category": "火行攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "坱土",
+          "combination": "土土土",
+          "category": "土行攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "生陣",
+          "combination": "三張牌連續相生",
+          "category": "主動術式",
+          "effect": "回復生命值，點數＝等級總和×３"
+        },
+        {
+          "name": "剋陣",
+          "combination": "三張牌連續相剋",
+          "category": "主動術式",
+          "effect": "扣除下家防護罩，點數＝等級總和×３"
+        },
+        {
+          "name": "光芒",
+          "combination": "金金火水",
+          "category": "主動術式",
+          "effect": "檢視下家手牌，下家無法行動及抽牌２回合"
+        },
+        {
+          "name": "氣壁",
+          "combination": "木木金火",
+          "category": "主動術式",
+          "effect": "建構防護罩，點數＝等級總和×４"
+        },
+        {
+          "name": "歸元",
+          "combination": "水水土木",
+          "category": "主動術式",
+          "effect": "回復生命值，點數＝等級總和×４"
+        },
+        {
+          "name": "震暴",
+          "combination": "火火水土",
+          "category": "物理攻擊",
+          "effect": "物理攻擊，點數＝等級總和×４"
+        },
+        {
+          "name": "混沌",
+          "combination": "土土木金",
+          "category": "主動術式",
+          "effect": "檢視下家手牌，將其中兩張放回牌堆最上方"
+        },
+        {
+          "name": "五行輪迴",
+          "combination": "金木水火土",
+          "category": "主動術式",
+          "effect": "雙方生命值交換"
+        },
+        {
+          "name": "五流歸一",
+          "combination": "五張同級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝目標手牌數×１５，本回合抽牌＋１"
+        }
+      ]
+    }
+  },
+  "star": {
+    "name": "進階規則‧星辰圖記",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "虛空破星術",
+          "combination": "三張同級牌",
+          "category": "主動術式",
+          "effect": "破除所有星辰，星辰被破除方扣除２０點生命"
+        },
+        {
+          "name": "太白星擊",
+          "combination": "金",
+          "category": "金行攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "太白鍊天陣",
+          "combination": "金金土",
+          "category": "金行攻擊",
+          "effect": "點數＝等級總和×３，本回合抽牌＋１"
+        },
+        {
+          "name": "歲星星擊",
+          "combination": "木",
+          "category": "木行攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "歲星柱天陣",
+          "combination": "木木水",
+          "category": "木行攻擊",
+          "effect": "點數＝等級總和×３，本回合抽牌＋１"
+        },
+        {
+          "name": "辰星星擊",
+          "combination": "水",
+          "category": "水行攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "辰星淬天陣",
+          "combination": "水水金",
+          "category": "水行攻擊",
+          "effect": "點數＝等級總和×３，本回合抽牌＋１"
+        },
+        {
+          "name": "熒惑星擊",
+          "combination": "火",
+          "category": "火行攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "熒惑燎天陣",
+          "combination": "火火木",
+          "category": "火行攻擊",
+          "effect": "點數＝等級總和×３，本回合抽牌＋１"
+        },
+        {
+          "name": "鎮星星擊",
+          "combination": "土",
+          "category": "土行攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "鎮星堪天陣",
+          "combination": "土土火",
+          "category": "土行攻擊",
+          "effect": "點數＝等級總和×３，本回合抽牌＋１"
+        }
+      ]
+    }
+  },
+  "field": {
+    "name": "進階規則‧五方傳說",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "東‧青龍",
+          "combination": "木木木木木",
+          "category": "木行攻擊",
+          "effect": "點數＝８１，傷害後轉移為木行環境，本陣法不受其他陣法效果影響"
+        },
+        {
+          "name": "西‧白虎",
+          "combination": "金金金金金",
+          "category": "金行攻擊",
+          "effect": "點數＝８１，傷害後轉移為金行環境，本陣法不受其他陣法效果影響"
+        },
+        {
+          "name": "南‧朱雀",
+          "combination": "火火火火火",
+          "category": "火行攻擊",
+          "effect": "點數＝８１，傷害後轉移為火行環境，本陣法不受其他陣法效果影響"
+        },
+        {
+          "name": "北‧玄武",
+          "combination": "水水水水水",
+          "category": "水行攻擊",
+          "effect": "點數＝８１，傷害後轉移為水行環境，本陣法不受其他陣法效果影響"
+        },
+        {
+          "name": "中‧黃蛇",
+          "combination": "土土土土土",
+          "category": "土行攻擊",
+          "effect": "點數＝８１，傷害後轉移為土行環境，本陣法不受其他陣法效果影響"
+        },
+        {
+          "name": "虛空斷脈術",
+          "combination": "三張同級牌",
+          "category": "主動術式",
+          "effect": "破除環境，環境被破除時雙方扣除２０點生命"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "name": "進階規則‧英雄學派",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "虛空返璞術",
+          "combination": "三張同級牌",
+          "category": "主動術式",
+          "effect": "自身扣除２０點生命，破除所有職業，以１或２級牌組成時對傳說職業無效"
+        }
+      ]
+    }
+  },
+  "warrior": {
+    "name": "戰士學派",
+    "content": {
+      "ability": [
+        {
+          "name": "卸勁",
+          "category": "普通能力",
+          "effect": "對己物理傷害減半"
+        },
+        {
+          "name": "武器專精",
+          "category": "專精能力",
+          "effect": "以「金＋任意牌」可組成武器"
+        },
+        {
+          "name": "防禦專精",
+          "category": "專精能力",
+          "effect": "以「木＋任意牌」可組成防禦"
+        },
+        {
+          "name": "反震專精",
+          "category": "專精能力",
+          "effect": "以「火＋任意牌」可組成反震"
+        },
+        {
+          "name": "武器精研",
+          "category": "普通能力",
+          "effect": "施展武器之回合抽牌＋１"
+        },
+        {
+          "name": "震暴專精",
+          "category": "專精能力",
+          "effect": "以「火火水＋任意牌」可組成震暴"
+        },
+        {
+          "name": "金行抗性",
+          "category": "普通能力",
+          "effect": "對己金行傷害無效"
+        },
+        {
+          "name": "戰魄",
+          "category": "普通能力",
+          "effect": "施展震暴時，所有其他玩家無法行動及抽牌１回合"
+        }
+      ],
+      "spell": [
+        {
+          "name": "神兵",
+          "combination": "金＋同級牌",
+          "category": "物理攻擊",
+          "effect": "點數＝等級總和×３"
+        },
+        {
+          "name": "落光斬",
+          "combination": "金金火火",
+          "category": "物理攻擊",
+          "effect": "點數＝等級總和×６"
+        }
+      ]
+    }
+  },
+  "seeker": {
+    "name": "尋道者學派",
+    "content": {
+      "ability": [
+        {
+          "name": "尋道術",
+          "category": "普通能力",
+          "effect": "棄牌回收時扣除之生命減半"
+        },
+        {
+          "name": "生陣專精",
+          "category": "專精能力",
+          "effect": "以「兩張相生牌」可組成生陣"
+        },
+        {
+          "name": "剋陣專精",
+          "category": "專精能力",
+          "effect": "以「兩張相剋牌」可組成剋陣"
+        },
+        {
+          "name": "歸元專精",
+          "category": "專精能力",
+          "effect": "以「水水土＋任意牌」可組成歸元"
+        },
+        {
+          "name": "五行輪迴專精",
+          "category": "專精能力",
+          "effect": "以「四張不同屬性牌」可組成五行輪迴"
+        },
+        {
+          "name": "木行抗性",
+          "category": "普通能力",
+          "effect": "對己木行傷害無效"
+        },
+        {
+          "name": "道源",
+          "category": "普通能力",
+          "effect": "術式不受封印、幻印效果影響"
+        }
+      ],
+      "spell": [
+        {
+          "name": "道禦",
+          "combination": "木＋同級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝等級總和×３，下家下回合攻擊之傷害無效"
+        },
+        {
+          "name": "轉生術",
+          "combination": "木＋三張連續相生、等級總和１０以上之牌",
+          "category": "主動術式",
+          "effect": "回復生命值，點數＝木×２５"
+        }
+      ]
+    }
+  },
+  "mesmer": {
+    "name": "幻術師學派",
+    "content": {
+      "ability": [
+        {
+          "name": "幻術",
+          "category": "發動能力",
+          "effect": "捨棄一張手牌，選擇一張手牌於本回合視為指定屬性之５級牌，施展五行擊術"
+        },
+        {
+          "name": "封印專精",
+          "category": "專精能力",
+          "effect": "以「水＋任意牌」可組成封印"
+        },
+        {
+          "name": "幻術精研",
+          "category": "普通能力",
+          "effect": "發動幻術時，若所捨棄之牌等級３級以上時，本回合抽牌＋１"
+        },
+        {
+          "name": "氣壁專精",
+          "category": "專精能力",
+          "effect": "以「木木金＋任意牌」可組成氣壁"
+        },
+        {
+          "name": "水行抗性",
+          "category": "普通能力",
+          "effect": "對己水行傷害無效"
+        },
+        {
+          "name": "幻朧",
+          "category": "發動能力",
+          "effect": "捨棄一張手牌，選擇一張手牌於當回合視為指定屬性、指定等級，組成基礎規則陣法並施展"
+        }
+      ],
+      "spell": [
+        {
+          "name": "幻印",
+          "combination": "水＋同級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝等級總和×３，下家下回合術式無效"
+        },
+        {
+          "name": "紫光防罩",
+          "combination": "水水＋三張任意牌",
+          "category": "主動術式",
+          "effect": "建構防護罩，點數＝等級總和×５"
+        }
+      ]
+    }
+  },
+  "mage": {
+    "name": "法師學派",
+    "content": {
+      "ability": [
+        {
+          "name": "鍠金專精",
+          "category": "專精能力",
+          "effect": "以「金金＋非金牌」可組成鍠金，該陣法點數－６"
+        },
+        {
+          "name": "樸木專精",
+          "category": "專精能力",
+          "effect": "以「木木＋非木牌」可組成樸木，該陣法點數－６"
+        },
+        {
+          "name": "洄水專精",
+          "category": "專精能力",
+          "effect": "以「水水＋非水牌」可組成洄水，該陣法點數－６"
+        },
+        {
+          "name": "熾火專精",
+          "category": "專精能力",
+          "effect": "以「火火＋非火牌」可組成熾火，該陣法點數－６"
+        },
+        {
+          "name": "坱土專精",
+          "category": "專精能力",
+          "effect": "以「土土＋非土牌」可組成坱土，該陣法點數－６"
+        },
+        {
+          "name": "光芒專精",
+          "category": "專精能力",
+          "effect": "以「金金火＋任意牌」可組成光芒"
+        },
+        {
+          "name": "五流歸一專精",
+          "category": "專精能力",
+          "effect": "以「四張同級牌」可組成五流歸一，該陣法點數－１５"
+        },
+        {
+          "name": "火行抗性",
+          "category": "普通能力",
+          "effect": "對己火行傷害無效"
+        },
+        {
+          "name": "法粹",
+          "category": "普通能力",
+          "effect": "鍠金專精、樸木專精、洄水專精、熾火專精、坱土專精減少陣法點數之效果無效"
+        }
+      ],
+      "spell": [
+        {
+          "name": "法震",
+          "combination": "火＋同級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝等級總和×３，下家下回合攻擊之傷害由目標和施展者平分"
+        },
+        {
+          "name": "魔法反光閃",
+          "combination": "火火＋兩張非火牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝火×火×５，本回合無法抽牌"
+        }
+      ]
+    }
+  },
+  "windwalker": {
+    "name": "風行者學派",
+    "content": {
+      "ability": [
+        {
+          "name": "風行術",
+          "category": "普通能力",
+          "effect": "２０點以下攻擊，不受防禦、道禦、法震效果影響"
+        },
+        {
+          "name": "幻化專精",
+          "category": "專精能力",
+          "effect": "以「土＋任意牌」可組成幻化"
+        },
+        {
+          "name": "影切",
+          "category": "發動能力",
+          "effect": "捨棄一張手牌，上家扣除該牌等級×２之生命"
+        },
+        {
+          "name": "混沌專精",
+          "category": "專精能力",
+          "effect": "以「土土木＋任意牌」可組成混沌"
+        },
+        {
+          "name": "土行抗性",
+          "category": "普通能力",
+          "effect": "對己土行傷害無效"
+        },
+        {
+          "name": "影遁",
+          "category": "普通能力",
+          "effect": "不受上家施展之光芒、混沌效果影響"
+        }
+      ],
+      "spell": [
+        {
+          "name": "影襲",
+          "combination": "土＋同級牌",
+          "category": "主動術式",
+          "effect": "上家扣除生命，點數＝等級總和×３"
+        },
+        {
+          "name": "刃影瞬殺",
+          "combination": "任意張數土，等級總和１０級以上",
+          "category": "主動術式",
+          "effect": "上家生命減半"
+        }
+      ]
+    }
+  },
+  "others": {
+    "name": "無學派",
+    "content": {
+      "ability": [
+        {
+          "name": "抉擇",
+          "category": "普通能力",
+          "effect": "以「１」可轉職為戰士、風行者、法師、尋道者或幻術師"
+        },
+        {
+          "name": "突破",
+          "category": "普通能力",
+          "effect": "以「１＋該職業原本轉職所需之牌」可轉職為戰神、影行者、法導、述道者或幻靈使"
+        },
+        {
+          "name": "仙術",
+          "category": "發動能力",
+          "effect": "捨棄一張５級牌，本回合無法行動，抽牌＋１"
+        },
+        {
+          "name": "聖術",
+          "category": "發動能力",
+          "effect": "選擇手中一張４級以上之牌，該牌於本回合組成光芒、氣壁、歸元、震暴、混沌時視為兩張"
+        }
+      ],
+      "spell": [
+        {
+          "name": "凝華斷空箭",
+          "combination": "三張同級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝２０，本回合抽牌＋２"
+        },
+        {
+          "name": "天弓嘯",
+          "combination": "５５５",
+          "category": "特殊攻擊",
+          "effect": "點數＝６０"
+        },
+        {
+          "name": "聖示",
+          "combination": "一張偶級牌",
+          "category": "主動術式",
+          "effect": "檢視下家手牌，下家下回合若覆蓋被動術式，該被動術式正面展示"
+        },
+        {
+          "name": "聖風",
+          "combination": "４４４",
+          "category": "主動術式",
+          "effect": "下家扣除２０點生命，無法抽牌１回合"
+        }
+      ]
+    }
+  },
+  "theme": {
+    "name": "主題規則系統",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "凝氣",
+          "combination": "兩張同級牌",
+          "category": "主動術式",
+          "effect": "我方靈氣＋２，以４級以上牌組成時前述效果改為靈氣＋３"
+        },
+        {
+          "name": "虛空紊流術",
+          "combination": "三張同級牌",
+          "category": "主動術式",
+          "effect": "雙方靈氣歸０，靈氣較低方扣除２０點生命"
+        }
+      ]
+    }
+  },
+  "old_generation": {
+    "name": "舊世代",
+    "content": {
+      "ability": [
+        {
+          "name": "調律",
+          "category": "發動能力",
+          "effect": "捨棄一張手牌，上家棄牌屬性、等級改為此牌之屬性、等級"
+        },
+        {
+          "name": "天響",
+          "category": "發動能力",
+          "effect": "捨棄一張等級大於上家棄牌等級之牌，將上家棄牌加入手牌"
+        },
+        {
+          "name": "煉陰",
+          "category": "普通能力",
+          "effect": "組合玄鐵、冥風、寒冰、幽光、飛灰時，５級牌視為偶級牌"
+        },
+        {
+          "name": "凝陰",
+          "category": "普通能力",
+          "effect": "棄牌回收放回偶級牌時，不扣除生命"
+        },
+        {
+          "name": "風水",
+          "category": "普通能力",
+          "effect": "轉職時，環境轉換為轉職使用牌屬性之環境"
+        },
+        {
+          "name": "堪輿",
+          "category": "普通能力",
+          "effect": "對己環行傷害減半"
+        },
+        {
+          "name": "龍脈",
+          "category": "發動能力",
+          "effect": "目前無環境時，捨棄一張５級牌，轉換為該行環境"
+        },
+        {
+          "name": "龍眼",
+          "category": "普通能力",
+          "effect": "自己施展之陣法不因環境效果影響而無效"
+        }
+      ],
+      "spell": [
+        {
+          "name": "鏡鳴",
+          "combination": "上家棄牌為金，金＋上家棄牌等級牌",
+          "category": "主動術式",
+          "effect": "檢視上家手牌，捨棄其中一張"
+        },
+        {
+          "name": "森鳴",
+          "combination": "上家棄牌為木，木＋上家棄牌等級牌",
+          "category": "主動術式",
+          "effect": "回復生命值，點數＝１５"
+        },
+        {
+          "name": "淙鳴",
+          "combination": "上家棄牌為水，水＋上家棄牌等級牌",
+          "category": "主動術式",
+          "effect": "本回合抽牌＋２"
+        },
+        {
+          "name": "煌鳴",
+          "combination": "上家棄牌為火，火＋上家棄牌等級牌",
+          "category": "主動術式",
+          "effect": "上家扣除生命，點數＝１５"
+        },
+        {
+          "name": "垠鳴",
+          "combination": "上家棄牌為土，土＋上家棄牌等級牌",
+          "category": "主動術式",
+          "effect": "建構防護罩，點數＝１５"
+        },
+        {
+          "name": "千鳴",
+          "combination": "三張上家棄牌屬性牌",
+          "category": "主動術式",
+          "effect": "將所有手牌放回牌堆最上方，抽六張牌，將其中任意張加入手牌，其餘捨棄"
+        },
+        {
+          "name": "玄鐵",
+          "combination": "兩張偶級金",
+          "category": "主動術式",
+          "effect": "建構防護罩，點數＝２０"
+        },
+        {
+          "name": "冥風",
+          "combination": "兩張偶級木",
+          "category": "主動術式",
+          "effect": "下家扣除生命，點數＝２０"
+        },
+        {
+          "name": "寒冰",
+          "combination": "兩張偶級水",
+          "category": "主動術式",
+          "effect": "下家下回合無法行動及抽牌"
+        },
+        {
+          "name": "幽光",
+          "combination": "兩張偶級火",
+          "category": "主動術式",
+          "effect": "檢視下家手牌並捨棄一張"
+        },
+        {
+          "name": "飛灰",
+          "combination": "兩張偶級土",
+          "category": "主動術式",
+          "effect": "２回合內抽牌＋１"
+        },
+        {
+          "name": "太陰神箭",
+          "combination": "三張偶級牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝４０"
+        },
+        {
+          "name": "龍嘯",
+          "combination": "三張環境屬性牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝４０，上家出示手牌，捨棄所有環境屬性牌"
+        }
+      ]
+    }
+  },
+  "dark": {
+    "name": "暗黑陣法",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "暗黑光芒",
+          "combination": "金金火水，等級總和１０級以下，靈氣２",
+          "category": "主動術式",
+          "effect": "下家扣除２０點生命，無法行動及抽牌２回合"
+        },
+        {
+          "name": "暗黑氣壁",
+          "combination": "木木金火，等級總和１０級以下，靈氣２",
+          "category": "主動術式",
+          "effect": "建構防護罩，點數＝等級總和×６"
+        },
+        {
+          "name": "暗黑歸元",
+          "combination": "水水土木，等級總和１０級以下，靈氣２",
+          "category": "主動術式",
+          "effect": "回復生命值，點數＝等級總和×６"
+        },
+        {
+          "name": "暗黑震暴",
+          "combination": "火火水土，等級總和１０級以下，靈氣２",
+          "category": "物理攻擊",
+          "effect": "點數＝等級總和×６"
+        },
+        {
+          "name": "暗黑混沌",
+          "combination": "土土木金，等級總和１０級以下，靈氣２",
+          "category": "主動術式",
+          "effect": "下家扣除２０點生命，隨機將兩張手牌放回牌堆最上方"
+        }
+      ]
+    }
+  },
+  "spirit": {
+    "name": "精靈",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "金靈喚術",
+          "combination": "金金",
+          "category": "主動術式",
+          "effect": "召喚金精靈"
+        },
+        {
+          "name": "木靈喚術",
+          "combination": "木木",
+          "category": "主動術式",
+          "effect": "召喚木精靈"
+        },
+        {
+          "name": "水靈喚術",
+          "combination": "水水",
+          "category": "主動術式",
+          "effect": "召喚水精靈"
+        },
+        {
+          "name": "火靈喚術",
+          "combination": "火火",
+          "category": "主動術式",
+          "effect": "召喚火精靈"
+        },
+        {
+          "name": "土靈喚術",
+          "combination": "土土",
+          "category": "主動術式",
+          "effect": "召喚土精靈"
+        },
+        {
+          "name": "虛空碎靈術",
+          "combination": "三張同級牌",
+          "category": "主動術式",
+          "effect": "破除所有精靈，精靈被破除者扣除２０點生命"
+        }
+      ]
+    }
+  },
+  "new_school": {
+    "name": "新雙學派",
+    "content": {
+      "ability": [
+
+      ],
+      "spell": [
+        {
+          "name": "天崩擊",
+          "combination": "四張不同級牌",
+          "category": "物理攻擊",
+          "effect": "點數＝４０，上家靈氣－２"
+        },
+        {
+          "name": "幻龍擊",
+          "combination": "三張同行不同級牌",
+          "category": "物理攻擊",
+          "effect": "點數＝４０，靈氣＋１"
+        },
+        {
+          "name": "神戟光",
+          "combination": "四張同級牌",
+          "category": "物理攻擊",
+          "effect": "點數＝６０"
+        },
+        {
+          "name": "殘影斬",
+          "combination": "奇級牌＋偶級牌",
+          "category": "物理攻擊",
+          "effect": "點數＝１０，上家扣除５點生命"
+        },
+        {
+          "name": "幻道輪迴",
+          "combination": "金木水火土",
+          "category": "主動術式",
+          "effect": "雙方生命值交換"
+        },
+        {
+          "name": "禁錮法陣",
+          "combination": "５，靈氣２",
+          "category": "主動術式",
+          "effect": "所有其他玩家無法行動及抽牌１回合"
+        },
+        {
+          "name": "暗影縛",
+          "combination": "三張同級不同行牌",
+          "category": "主動術式",
+          "effect": "檢視下家手牌，將其中一張放回牌堆最上方，下家無法行動及抽牌１回合"
+        },
+        {
+          "name": "空漩彈",
+          "combination": "１",
+          "category": "特殊攻擊",
+          "effect": "點數＝１０"
+        },
+        {
+          "name": "幻影劍術",
+          "combination": "兩張相同牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝１５，直到自己下一回合開始前，不受以自身為單一目標之陣法效果影響"
+        },
+        {
+          "name": "離光刃",
+          "combination": "三張同行牌",
+          "category": "特殊攻擊",
+          "effect": "點數＝２０，上家上回合覆蓋空城時，點數雙倍"
+        }
+      ]
+    }
+  }
+}
