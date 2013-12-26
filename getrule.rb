@@ -37,7 +37,8 @@ links.each do |key, link|
         name: md[1],
         combination: md[2],
         category: md[3],
-        effect: md[4]
+        effect: md[4],
+        sort: "clause"
       }
     end
   end.compact
@@ -48,7 +49,8 @@ links.each do |key, link|
       {
         name: md[1],
         category: md[2],
-        effect: md[3]
+        effect: md[3],
+        sort: "clause"
       }
     end
   end.compact
@@ -58,14 +60,15 @@ links.each do |key, link|
   rule = rule.merge({
     key => {
       name: title,
-      content: {
-        ability: abilities,
-        spell: spells
-      }
+      content: abilities | spells
     }
   })
 
   puts "done with #{title}"
 end
 
-File.open("rule.json", "w").puts JSON.pretty_generate(rule)
+if ARGF.closed?
+  puts JSON.pretty_generate(rule)
+else
+  File.open(ARGF.filename, "w").puts JSON.pretty_generate(rule)
+end
