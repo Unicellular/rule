@@ -470,6 +470,7 @@
   },
   "hero": {
     "name": "進階規則‧英雄學派",
+    "sort": "condition",
     "content": [
       {
         "name": "虛空返璞術",
@@ -477,490 +478,490 @@
         "category": "主動術式",
         "effect": "自身扣除２０點生命，破除所有職業，以１或２級牌組成時對傳說職業無效",
         "sort": "clause"
-      }
-    ]
-  },
-  "warrior": {
-    "name": "戰士學派",
-    "content": [
+      },
       {
-        "name": "戰士",
-        "sort": "condition",
+        "name": "戰士學派",
         "content": [
           {
-            "name": "卸勁",
-            "category": "普通能力",
-            "effect": "對己物理傷害減半",
-            "sort": "clause"
+            "name": "戰士",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "卸勁",
+                "category": "普通能力",
+                "effect": "對己物理傷害減半",
+                "sort": "clause"
+              },
+              {
+                "name": "武器專精",
+                "category": "專精能力",
+                "effect": "以「金＋任意牌」可組成武器",
+                "sort": "clause"
+              },
+              {
+                "name": "防禦專精",
+                "category": "專精能力",
+                "effect": "以「木＋任意牌」可組成防禦",
+                "sort": "clause"
+              },
+              {
+                "name": "反震專精",
+                "category": "專精能力",
+                "effect": "以「火＋任意牌」可組成反震",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "武器專精",
-            "category": "專精能力",
-            "effect": "以「金＋任意牌」可組成武器",
-            "sort": "clause"
+            "name": "戰神",
+            "sort": "condition",
+            "inherit": "戰士",
+            "content": [
+              {
+                "name": "武器精研",
+                "category": "普通能力",
+                "effect": "施展武器之回合抽牌＋１",
+                "sort": "clause"
+              },
+              {
+                "name": "神兵",
+                "combination": "金＋同級牌",
+                "category": "物理攻擊",
+                "effect": "點數＝等級總和×３",
+                "sort": "clause"
+              },
+              {
+                "name": "震暴專精",
+                "category": "專精能力",
+                "effect": "以「火火水＋任意牌」可組成震暴",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "防禦專精",
-            "category": "專精能力",
-            "effect": "以「木＋任意牌」可組成防禦",
-            "sort": "clause"
-          },
-          {
-            "name": "反震專精",
-            "category": "專精能力",
-            "effect": "以「火＋任意牌」可組成反震",
-            "sort": "clause"
+            "name": "勇者",
+            "sort": "condition",
+            "inherit": "戰神",
+            "content": [
+              {
+                "name": "金行抗性",
+                "category": "普通能力",
+                "effect": "對己金行傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "戰魄",
+                "category": "普通能力",
+                "effect": "施展震暴時，所有其他玩家無法行動及抽牌１回合",
+                "sort": "clause"
+              },
+              {
+                "name": "落光斬",
+                "combination": "金金火火",
+                "category": "物理攻擊",
+                "effect": "點數＝等級總和×６",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "戰神",
-        "sort": "condition",
-        "inherit": "戰士",
+        "name": "尋道者學派",
         "content": [
           {
-            "name": "武器精研",
-            "category": "普通能力",
-            "effect": "施展武器之回合抽牌＋１",
-            "sort": "clause"
+            "name": "尋道者",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "尋道術",
+                "category": "普通能力",
+                "effect": "棄牌回收時扣除之生命減半",
+                "sort": "clause"
+              },
+              {
+                "name": "生陣專精",
+                "category": "專精能力",
+                "effect": "以「兩張相生牌」可組成生陣",
+                "sort": "clause"
+              },
+              {
+                "name": "剋陣專精",
+                "category": "專精能力",
+                "effect": "以「兩張相剋牌」可組成剋陣",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "神兵",
-            "combination": "金＋同級牌",
-            "category": "物理攻擊",
-            "effect": "點數＝等級總和×３",
-            "sort": "clause"
+            "name": "述道者",
+            "sort": "condition",
+            "inherit": "尋道者",
+            "content": [
+              {
+                "name": "歸元專精",
+                "category": "專精能力",
+                "effect": "以「水水土＋任意牌」可組成歸元",
+                "sort": "clause"
+              },
+              {
+                "name": "道禦",
+                "combination": "木＋同級牌",
+                "category": "特殊攻擊",
+                "effect": "點數＝等級總和×３，下家下回合攻擊之傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "五行輪迴專精",
+                "category": "專精能力",
+                "effect": "以「四張不同屬性牌」可組成五行輪迴",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "震暴專精",
-            "category": "專精能力",
-            "effect": "以「火火水＋任意牌」可組成震暴",
-            "sort": "clause"
+            "name": "仁者",
+            "sort": "condition",
+            "inherit": "述道者",
+            "content": [
+              {
+                "name": "木行抗性",
+                "category": "普通能力",
+                "effect": "對己木行傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "道源",
+                "category": "普通能力",
+                "effect": "術式不受封印、幻印效果影響",
+                "sort": "clause"
+              },
+              {
+                "name": "轉生術",
+                "combination": "木＋三張連續相生、等級總和１０以上之牌",
+                "category": "主動術式",
+                "effect": "回復生命值，點數＝木×２５",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "勇者",
-        "sort": "condition",
-        "inherit": "戰神",
+        "name": "法師學派",
         "content": [
           {
-            "name": "金行抗性",
-            "category": "普通能力",
-            "effect": "對己金行傷害無效",
-            "sort": "clause"
+            "name": "法師",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "鍠金專精",
+                "category": "專精能力",
+                "effect": "以「金金＋非金牌」可組成鍠金，該陣法點數－６",
+                "sort": "clause"
+              },
+              {
+                "name": "樸木專精",
+                "category": "專精能力",
+                "effect": "以「木木＋非木牌」可組成樸木，該陣法點數－６",
+                "sort": "clause"
+              },
+              {
+                "name": "洄水專精",
+                "category": "專精能力",
+                "effect": "以「水水＋非水牌」可組成洄水，該陣法點數－６",
+                "sort": "clause"
+              },
+              {
+                "name": "熾火專精",
+                "category": "專精能力",
+                "effect": "以「火火＋非火牌」可組成熾火，該陣法點數－６",
+                "sort": "clause"
+              },
+              {
+                "name": "坱土專精",
+                "category": "專精能力",
+                "effect": "以「土土＋非土牌」可組成坱土，該陣法點數－６",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "戰魄",
-            "category": "普通能力",
-            "effect": "施展震暴時，所有其他玩家無法行動及抽牌１回合",
-            "sort": "clause"
+            "name": "法導",
+            "sort": "condition",
+            "inherit": "法師",
+            "content": [
+              {
+                "name": "光芒專精",
+                "category": "專精能力",
+                "effect": "以「金金火＋任意牌」可組成光芒",
+                "sort": "clause"
+              },
+              {
+                "name": "法震",
+                "combination": "火＋同級牌",
+                "category": "特殊攻擊",
+                "effect": "點數＝等級總和×３，下家下回合攻擊之傷害由目標和施展者平分",
+                "sort": "clause"
+              },
+              {
+                "name": "五流歸一專精",
+                "category": "專精能力",
+                "effect": "以「四張同級牌」可組成五流歸一，該陣法點數－１５",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "落光斬",
-            "combination": "金金火火",
-            "category": "物理攻擊",
-            "effect": "點數＝等級總和×６",
-            "sort": "clause"
-          }
-        ]
-      }
-    ]
-  },
-  "seeker": {
-    "name": "尋道者學派",
-    "content": [
-      {
-        "name": "尋道者",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "尋道術",
-            "category": "普通能力",
-            "effect": "棄牌回收時扣除之生命減半",
-            "sort": "clause"
-          },
-          {
-            "name": "生陣專精",
-            "category": "專精能力",
-            "effect": "以「兩張相生牌」可組成生陣",
-            "sort": "clause"
-          },
-          {
-            "name": "剋陣專精",
-            "category": "專精能力",
-            "effect": "以「兩張相剋牌」可組成剋陣",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "述道者",
-        "sort": "condition",
-        "inherit": "尋道者",
-        "content": [
-          {
-            "name": "歸元專精",
-            "category": "專精能力",
-            "effect": "以「水水土＋任意牌」可組成歸元",
-            "sort": "clause"
-          },
-          {
-            "name": "道禦",
-            "combination": "木＋同級牌",
-            "category": "特殊攻擊",
-            "effect": "點數＝等級總和×３，下家下回合攻擊之傷害無效",
-            "sort": "clause"
-          },
-          {
-            "name": "五行輪迴專精",
-            "category": "專精能力",
-            "effect": "以「四張不同屬性牌」可組成五行輪迴",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "仁者",
-        "sort": "condition",
-        "inherit": "述道者",
-        "content": [
-          {
-            "name": "木行抗性",
-            "category": "普通能力",
-            "effect": "對己木行傷害無效",
-            "sort": "clause"
-          },
-          {
-            "name": "道源",
-            "category": "普通能力",
-            "effect": "術式不受封印、幻印效果影響",
-            "sort": "clause"
-          },
-          {
-            "name": "轉生術",
-            "combination": "木＋三張連續相生、等級總和１０以上之牌",
-            "category": "主動術式",
-            "effect": "回復生命值，點數＝木×２５",
-            "sort": "clause"
-          }
-        ]
-      }
-    ]
-  },
-  "mesmer": {
-    "name": "幻術師學派",
-    "content": [
-      {
-        "name": "幻術師",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "幻術",
-            "category": "發動能力",
-            "effect": "捨棄一張手牌，選擇一張手牌於本回合視為指定屬性之５級牌，施展五行擊術",
-            "sort": "clause"
-          },
-          {
-            "name": "封印專精",
-            "category": "專精能力",
-            "effect": "以「水＋任意牌」可組成封印",
-            "sort": "clause"
+            "name": "智者",
+            "sort": "condition",
+            "inherit": "法導",
+            "content": [
+              {
+                "name": "火行抗性",
+                "category": "普通能力",
+                "effect": "對己火行傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "法粹",
+                "category": "普通能力",
+                "effect": "鍠金專精、樸木專精、洄水專精、熾火專精、坱土專精減少陣法點數之效果無效",
+                "sort": "clause"
+              },
+              {
+                "name": "魔法反光閃",
+                "combination": "火火＋兩張非火牌",
+                "category": "特殊攻擊",
+                "effect": "點數＝火×火×５，本回合無法抽牌",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "幻靈使",
-        "sort": "condition",
-        "inherit": "幻術師",
+        "name": "風行者學派",
         "content": [
           {
-            "name": "幻術精研",
-            "category": "普通能力",
-            "effect": "發動幻術時，若所捨棄之牌等級３級以上時，本回合抽牌＋１",
-            "sort": "clause"
+            "name": "風行者",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "風行術",
+                "category": "普通能力",
+                "effect": "２０點以下攻擊，不受防禦、道禦、法震效果影響",
+                "sort": "clause"
+              },
+              {
+                "name": "幻化專精",
+                "category": "專精能力",
+                "effect": "以「土＋任意牌」可組成幻化",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "幻印",
-            "combination": "水＋同級牌",
-            "category": "特殊攻擊",
-            "effect": "點數＝等級總和×３，下家下回合術式無效",
-            "sort": "clause"
+            "name": "影行者",
+            "sort": "condition",
+            "inherit": "風行者",
+            "content": [
+              {
+                "name": "影切",
+                "category": "發動能力",
+                "effect": "捨棄一張手牌，上家扣除該牌等級×２之生命",
+                "sort": "clause"
+              },
+              {
+                "name": "影襲",
+                "combination": "土＋同級牌",
+                "category": "主動術式",
+                "effect": "上家扣除生命，點數＝等級總和×３",
+                "sort": "clause"
+              },
+              {
+                "name": "混沌專精",
+                "category": "專精能力",
+                "effect": "以「土土木＋任意牌」可組成混沌",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "氣壁專精",
-            "category": "專精能力",
-            "effect": "以「木木金＋任意牌」可組成氣壁",
-            "sort": "clause"
+            "name": "武者",
+            "sort": "condition",
+            "inherit": "影行者",
+            "content": [
+              {
+                "name": "土行抗性",
+                "category": "普通能力",
+                "effect": "對己土行傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "影遁",
+                "category": "普通能力",
+                "effect": "不受上家施展之光芒、混沌效果影響",
+                "sort": "clause"
+              },
+              {
+                "name": "刃影瞬殺",
+                "combination": "任意張數土，等級總和１０級以上",
+                "category": "主動術式",
+                "effect": "上家生命減半",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "隱者",
-        "sort": "condition",
-        "inherit": "幻靈使",
+        "name": "無學派",
         "content": [
           {
-            "name": "水行抗性",
-            "category": "普通能力",
-            "effect": "對己水行傷害無效",
-            "sort": "clause"
+            "name": "初行客",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "抉擇",
+                "category": "普通能力",
+                "effect": "以「１」可轉職為戰士、風行者、法師、尋道者或幻術師",
+                "sort": "clause"
+              },
+              {
+                "name": "突破",
+                "category": "普通能力",
+                "effect": "以「１＋該職業原本轉職所需之牌」可轉職為戰神、影行者、法導、述道者或幻靈使",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "幻朧",
-            "category": "發動能力",
-            "effect": "捨棄一張手牌，選擇一張手牌於當回合視為指定屬性、指定等級，組成基礎規則陣法並施展",
-            "sort": "clause"
+            "name": "仙者",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "仙術",
+                "category": "發動能力",
+                "effect": "捨棄一張５級牌，本回合無法行動，抽牌＋１",
+                "sort": "clause"
+              },
+              {
+                "name": "凝華斷空箭",
+                "combination": "三張同級牌",
+                "category": "特殊攻擊",
+                "effect": "點數＝２０，本回合抽牌＋２",
+                "sort": "clause"
+              },
+              {
+                "name": "天弓嘯",
+                "combination": "５５５",
+                "category": "特殊攻擊",
+                "effect": "點數＝６０",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "紫光防罩",
-            "combination": "水水＋三張任意牌",
-            "category": "主動術式",
-            "effect": "建構防護罩，點數＝等級總和×５",
-            "sort": "clause"
-          }
-        ]
-      }
-    ]
-  },
-  "mage": {
-    "name": "法師學派",
-    "content": [
-      {
-        "name": "法師",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "鍠金專精",
-            "category": "專精能力",
-            "effect": "以「金金＋非金牌」可組成鍠金，該陣法點數－６",
-            "sort": "clause"
-          },
-          {
-            "name": "樸木專精",
-            "category": "專精能力",
-            "effect": "以「木木＋非木牌」可組成樸木，該陣法點數－６",
-            "sort": "clause"
-          },
-          {
-            "name": "洄水專精",
-            "category": "專精能力",
-            "effect": "以「水水＋非水牌」可組成洄水，該陣法點數－６",
-            "sort": "clause"
-          },
-          {
-            "name": "熾火專精",
-            "category": "專精能力",
-            "effect": "以「火火＋非火牌」可組成熾火，該陣法點數－６",
-            "sort": "clause"
-          },
-          {
-            "name": "坱土專精",
-            "category": "專精能力",
-            "effect": "以「土土＋非土牌」可組成坱土，該陣法點數－６",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "法導",
-        "sort": "condition",
-        "inherit": "法師",
-        "content": [
-          {
-            "name": "光芒專精",
-            "category": "專精能力",
-            "effect": "以「金金火＋任意牌」可組成光芒",
-            "sort": "clause"
-          },
-          {
-            "name": "法震",
-            "combination": "火＋同級牌",
-            "category": "特殊攻擊",
-            "effect": "點數＝等級總和×３，下家下回合攻擊之傷害由目標和施展者平分",
-            "sort": "clause"
-          },
-          {
-            "name": "五流歸一專精",
-            "category": "專精能力",
-            "effect": "以「四張同級牌」可組成五流歸一，該陣法點數－１５",
-            "sort": "clause"
+            "name": "聖者",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "聖術",
+                "category": "發動能力",
+                "effect": "選擇手中一張４級以上之牌，該牌於本回合組成光芒、氣壁、歸元、震暴、混沌時視為兩張",
+                "sort": "clause"
+              },
+              {
+                "name": "聖示",
+                "combination": "一張偶級牌",
+                "category": "主動術式",
+                "effect": "檢視下家手牌，下家下回合若覆蓋被動術式，該被動術式正面展示",
+                "sort": "clause"
+              },
+              {
+                "name": "聖風",
+                "combination": "４４４",
+                "category": "主動術式",
+                "effect": "下家扣除２０點生命，無法抽牌１回合",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "智者",
-        "sort": "condition",
-        "inherit": "法導",
+        "name": "幻術師學派",
         "content": [
           {
-            "name": "火行抗性",
-            "category": "普通能力",
-            "effect": "對己火行傷害無效",
-            "sort": "clause"
+            "name": "幻術師",
+            "sort": "condition",
+            "content": [
+              {
+                "name": "幻術",
+                "category": "發動能力",
+                "effect": "捨棄一張手牌，選擇一張手牌於本回合視為指定屬性之５級牌，施展五行擊術",
+                "sort": "clause"
+              },
+              {
+                "name": "封印專精",
+                "category": "專精能力",
+                "effect": "以「水＋任意牌」可組成封印",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "法粹",
-            "category": "普通能力",
-            "effect": "鍠金專精、樸木專精、洄水專精、熾火專精、坱土專精減少陣法點數之效果無效",
-            "sort": "clause"
+            "name": "幻靈使",
+            "sort": "condition",
+            "inherit": "幻術師",
+            "content": [
+              {
+                "name": "幻術精研",
+                "category": "普通能力",
+                "effect": "發動幻術時，若所捨棄之牌等級３級以上時，本回合抽牌＋１",
+                "sort": "clause"
+              },
+              {
+                "name": "幻印",
+                "combination": "水＋同級牌",
+                "category": "特殊攻擊",
+                "effect": "點數＝等級總和×３，下家下回合術式無效",
+                "sort": "clause"
+              },
+              {
+                "name": "氣壁專精",
+                "category": "專精能力",
+                "effect": "以「木木金＋任意牌」可組成氣壁",
+                "sort": "clause"
+              }
+            ]
           },
           {
-            "name": "魔法反光閃",
-            "combination": "火火＋兩張非火牌",
-            "category": "特殊攻擊",
-            "effect": "點數＝火×火×５，本回合無法抽牌",
-            "sort": "clause"
-          }
-        ]
-      }
-    ]
-  },
-  "windwalker": {
-    "name": "風行者學派",
-    "content": [
-      {
-        "name": "風行者",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "風行術",
-            "category": "普通能力",
-            "effect": "２０點以下攻擊，不受防禦、道禦、法震效果影響",
-            "sort": "clause"
-          },
-          {
-            "name": "幻化專精",
-            "category": "專精能力",
-            "effect": "以「土＋任意牌」可組成幻化",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "影行者",
-        "sort": "condition",
-        "inherit": "風行者",
-        "content": [
-          {
-            "name": "影切",
-            "category": "發動能力",
-            "effect": "捨棄一張手牌，上家扣除該牌等級×２之生命",
-            "sort": "clause"
-          },
-          {
-            "name": "影襲",
-            "combination": "土＋同級牌",
-            "category": "主動術式",
-            "effect": "上家扣除生命，點數＝等級總和×３",
-            "sort": "clause"
-          },
-          {
-            "name": "混沌專精",
-            "category": "專精能力",
-            "effect": "以「土土木＋任意牌」可組成混沌",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "武者",
-        "sort": "condition",
-        "inherit": "影行者",
-        "content": [
-          {
-            "name": "土行抗性",
-            "category": "普通能力",
-            "effect": "對己土行傷害無效",
-            "sort": "clause"
-          },
-          {
-            "name": "影遁",
-            "category": "普通能力",
-            "effect": "不受上家施展之光芒、混沌效果影響",
-            "sort": "clause"
-          },
-          {
-            "name": "刃影瞬殺",
-            "combination": "任意張數土，等級總和１０級以上",
-            "category": "主動術式",
-            "effect": "上家生命減半",
-            "sort": "clause"
-          }
-        ]
-      }
-    ]
-  },
-  "others": {
-    "name": "無學派",
-    "content": [
-      {
-        "name": "初行客",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "抉擇",
-            "category": "普通能力",
-            "effect": "以「１」可轉職為戰士、風行者、法師、尋道者或幻術師",
-            "sort": "clause"
-          },
-          {
-            "name": "突破",
-            "category": "普通能力",
-            "effect": "以「１＋該職業原本轉職所需之牌」可轉職為戰神、影行者、法導、述道者或幻靈使",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "仙者",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "仙術",
-            "category": "發動能力",
-            "effect": "捨棄一張５級牌，本回合無法行動，抽牌＋１",
-            "sort": "clause"
-          },
-          {
-            "name": "凝華斷空箭",
-            "combination": "三張同級牌",
-            "category": "特殊攻擊",
-            "effect": "點數＝２０，本回合抽牌＋２",
-            "sort": "clause"
-          },
-          {
-            "name": "天弓嘯",
-            "combination": "５５５",
-            "category": "特殊攻擊",
-            "effect": "點數＝６０",
-            "sort": "clause"
-          }
-        ]
-      },
-      {
-        "name": "聖者",
-        "sort": "condition",
-        "content": [
-          {
-            "name": "聖術",
-            "category": "發動能力",
-            "effect": "選擇手中一張４級以上之牌，該牌於本回合組成光芒、氣壁、歸元、震暴、混沌時視為兩張",
-            "sort": "clause"
-          },
-          {
-            "name": "聖示",
-            "combination": "一張偶級牌",
-            "category": "主動術式",
-            "effect": "檢視下家手牌，下家下回合若覆蓋被動術式，該被動術式正面展示",
-            "sort": "clause"
-          },
-          {
-            "name": "聖風",
-            "combination": "４４４",
-            "category": "主動術式",
-            "effect": "下家扣除２０點生命，無法抽牌１回合",
-            "sort": "clause"
+            "name": "隱者",
+            "sort": "condition",
+            "inherit": "幻靈使",
+            "content": [
+              {
+                "name": "水行抗性",
+                "category": "普通能力",
+                "effect": "對己水行傷害無效",
+                "sort": "clause"
+              },
+              {
+                "name": "幻朧",
+                "category": "發動能力",
+                "effect": "捨棄一張手牌，選擇一張手牌於當回合視為指定屬性、指定等級，組成基礎規則陣法並施展",
+                "sort": "clause"
+              },
+              {
+                "name": "紫光防罩",
+                "combination": "水水＋三張任意牌",
+                "category": "主動術式",
+                "effect": "建構防護罩，點數＝等級總和×５",
+                "sort": "clause"
+              }
+            ]
           }
         ]
       }
@@ -1371,7 +1372,10 @@
       {
         "name": "戰道者",
         "sort": "condition",
-        "inherit": ["戰士", "尋道者"],
+        "inherit": [
+          "戰士",
+          "尋道者"
+        ],
         "content": [
           {
             "name": "天崩擊",
@@ -1385,7 +1389,10 @@
       {
         "name": "幻戰士",
         "sort": "condition",
-        "inherit": ["戰士", "幻術師"],
+        "inherit": [
+          "戰士",
+          "幻術師"
+        ],
         "content": [
           {
             "name": "幻龍擊",
@@ -1399,7 +1406,10 @@
       {
         "name": "戰法師",
         "sort": "condition",
-        "inherit": ["戰士", "法師"],
+        "inherit": [
+          "戰士",
+          "法師"
+        ],
         "content": [
           {
             "name": "神戟光",
@@ -1413,7 +1423,10 @@
       {
         "name": "戰道者",
         "sort": "condition",
-        "inherit": ["戰士", "風行者"],
+        "inherit": [
+          "戰士",
+          "風行者"
+        ],
         "content": [
           {
             "name": "殘影斬",
@@ -1427,7 +1440,10 @@
       {
         "name": "道幻師",
         "sort": "condition",
-        "inherit": ["幻術師", "尋道者"],
+        "inherit": [
+          "幻術師",
+          "尋道者"
+        ],
         "content": [
           {
             "name": "幻道輪迴",
@@ -1441,7 +1457,10 @@
       {
         "name": "道法師",
         "sort": "condition",
-        "inherit": ["法師", "尋道者"],
+        "inherit": [
+          "法師",
+          "尋道者"
+        ],
         "content": [
           {
             "name": "禁錮法陣",
@@ -1455,7 +1474,10 @@
       {
         "name": "影道者",
         "sort": "condition",
-        "inherit": ["風行者", "尋道者"],
+        "inherit": [
+          "風行者",
+          "尋道者"
+        ],
         "content": [
           {
             "name": "暗影縛",
@@ -1469,7 +1491,10 @@
       {
         "name": "法幻士",
         "sort": "condition",
-        "inherit": ["法師", "幻術師"],
+        "inherit": [
+          "法師",
+          "幻術師"
+        ],
         "content": [
           {
             "name": "空漩彈",
@@ -1483,7 +1508,10 @@
       {
         "name": "幻行者",
         "sort": "condition",
-        "inherit": ["幻術師", "風行者"],
+        "inherit": [
+          "幻術師",
+          "風行者"
+        ],
         "content": [
           {
             "name": "幻影劍術",
@@ -1497,7 +1525,10 @@
       {
         "name": "法行者",
         "sort": "condition",
-        "inherit": ["法師", "風行者"],
+        "inherit": [
+          "法師",
+          "風行者"
+        ],
         "content": [
           {
             "name": "離光刃",

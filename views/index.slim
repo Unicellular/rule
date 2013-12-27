@@ -1,0 +1,34 @@
+.panel-group
+  - @rule.each do |key, value| 
+    .panel.panel-default
+      .panel-heading
+        a.panel-title data-toggle='collapse' data-target=="##{key}"
+          h2 =value['name'] 
+      
+      .panel-body.panel-collapse.collapse id==key
+        ul.list-group
+          -value['content'].each do |item|
+            li.list-group-item
+              - if item['sort'] == 'clause'
+                - item.each do |ikey, ival| 
+                  - unless ikey == 'sort'
+                    span.part =ival 
+              - else
+                h3 =item['name'] 
+                ul.list-group
+                  - item['content'].each do |subitem| 
+                    li.list-group-item
+                      - if subitem['sort'] == 'clause'
+                        - subitem.each do |ikey, ival| 
+                          - unless ikey == 'sort'
+                            span.part =ival 
+                      - else
+                        h4 =subitem['name'] 
+                        ul.list-group
+                          - subitem['content'].each do |subsubitem| 
+                            li.list-group-item
+                              - subsubitem.each do |ikey, ival| 
+                                - unless ikey == 'sort'
+                                  span.part =ival 
+
+p =@rule.to_s 
